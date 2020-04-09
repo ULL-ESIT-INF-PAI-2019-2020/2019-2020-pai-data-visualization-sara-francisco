@@ -1,0 +1,26 @@
+{
+  "name": "pai-trabajo-visualizacion",
+  "version": "1.0.0",
+  "description": "Trabajo de Visualización de Datos con Chart.js para PAI",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizsrb/pai-trabajo-visualizacion.git"
+  },
+  "keywords": [],
+  "author": "Francisco Javier Arocas Herrera <alu0100906813@ull.edu.es> (https://github.com/alu0100906813)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mizsrb/pai-trabajo-visualizacion/issues"
+  },
+  "homepage": "https://github.com/mizsrb/pai-trabajo-visualizacion#readme",
+  "dependencies": {
+    "chart.js": "^2.9.3"
+  }
+}
