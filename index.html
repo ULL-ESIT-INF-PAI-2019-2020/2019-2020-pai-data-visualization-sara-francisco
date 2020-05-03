@@ -5,9 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Visualization with Chart.js</title>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-  <h1>Data Visualization with Chart.js</h1>
+  <div class="content">
+    <h1>Data Visualization with Chart.js</h1>
+    <div class="chartExample">
+      <h2>Basic example</h2>
+      New confirmed cases during the week of 20th April-26th April in Spain
+      <canvas id="basicChart"></canvas>
+    </div>
+    <div class="chartExample">
+      <h2>Improved example</h2>
+      <canvas id="improvedChart"></canvas>
+    </div>
+    <div class="chartExample">
+      <h2>API data example</h2>
+      <img id="loader" src="img/loading.gif" alt="Loading...">
+      <canvas id="dataChart"></canvas>
+    </div>
+  </div>
+
+  <script src="src/js/01_basic_chart.js"></script>
+  <script src="src/js/02_improved_chart.js"></script>
+  <script src="src/js/03_data_chart.js"></script>
 </body>
 </html>
