@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+}
+
+#home {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.subpage {
+  font-size: large;
+}
+
+a {
+  color: rgb(2, 121, 139);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(2, 121, 139);
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
