@@ -3,9 +3,7 @@
 $.get({
   url: 'https://api.covid19tracking.narrativa.com/api/country/spain?date_from=2020-04-20&date_to=2020-04-26',
   crossDomain: true,
-  headers: {
-    'Access-Control-Allow-Origin': '*'
-  }
+  dataType: 'jsonp'
 }).done(response => {
     let labels = Object.keys(response.dates);
     let data = [];
