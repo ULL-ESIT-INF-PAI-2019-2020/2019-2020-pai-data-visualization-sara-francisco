@@ -9,5 +9,5 @@ This repo contains all the resources for the Data Visualization assignment.
 
 
 ### Authors
-Sara Revilla Báez
+Sara Revilla Báez  
 Francisco Javier Arocas Herrera
