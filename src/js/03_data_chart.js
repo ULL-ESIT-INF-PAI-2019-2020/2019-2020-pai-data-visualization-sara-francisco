@@ -1,10 +1,8 @@
 // Confirmed cases per day in the week of 20th April to 26th of April in Spain
 // https://api.covid19tracking.narrativa.com/api/country/spain?date_from=2020-04-20&date_to=2020-04-26
-$.get({
-  url: 'https://api.covid19tracking.narrativa.com/api/country/spain?date_from=2020-04-20&date_to=2020-04-26',
-  crossDomain: true,
-  dataType: 'jsonp'
-}).done(response => {
+const proxy = 'https://cors-anywhere.herokuapp.com/';
+$.get(proxy + 'https://api.covid19tracking.narrativa.com/api/country/spain?date_from=2020-04-20&date_to=2020-04-26')
+  .done(response => {
     let labels = Object.keys(response.dates);
     let data = [];
 
