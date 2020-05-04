@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Ejemplos de ChartJS utilizados en la presentación</title>
+  <meta name="description" content="Ejemplos de ChartJS utilizados en la presentación">
+  <meta name="author" content="Francisco Javier Arocas Herrera">
+  <style>
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+    }
+
+    .parentChart {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="parentChart">
+    <canvas id="Chart1"></canvas>
+  </div>
+  <hr>
+  <div class="parentChart">
+    <canvas id="Chart2"></canvas>
+  </div>
+  <hr>
+  <div class="parentChart">
+    <canvas id="Chart3"></canvas>
+  </div>
+  <hr>
+  <div class="parentChart">
+    <canvas id="Chart5"></canvas>
+  </div>
+  <hr>
+  <div class="parentChart">
+    <canvas id="Chart6"></canvas>
+  </div>
+  <hr> 
+  <div class="parentChart">
+    <canvas id="Chart7"></canvas>
+  </div>
+  <hr>
+  <div class="parentChart">
+    <canvas id="Chart8"></canvas>
+  </div>
+  <hr>   
+  <script src="../lib/Chartjs/Chart.bundle.min.js"></script>
+  <script src="../lib/chartPresentationExamples.js"></script>
+  <script>
+    new Chart('Chart1', getExample('line', 'Gráfica de línea'));
+    new Chart("Chart2", getExample('bar', 'Gráfica de barra'));
+    new Chart("Chart3", getExample('horizontalBar', 'Gráfica de barra horizontal'));
+    let pieChart = getExample('pie', 'Gráfica Circular');
+    new Chart('Chart5', changeRoundChart(pieChart));
+    let donutChart = getExample("doughnut", 'Gráfica de anillo');
+    new Chart('Chart6', changeRoundChart(donutChart));
+    let scatterChart = generateScatterData(getExample("scatter", 'Gráfica de dispersión'));
+    new Chart('Chart7', scatterChart);
+    let bubbleChart = add3dimension(generateScatterData(getExample("bubble", 'Gráfica de burbuja')));
+    new Chart('Chart8', bubbleChart);
+    showScreen();
+  </script>
+</body>
+</html>
