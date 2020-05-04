@@ -15,6 +15,10 @@ body {
   margin: auto;
 }
 
+.chartExample, .parentChart {
+  position: relative;
+}
+
 .subpage {
   font-size: large;
 }

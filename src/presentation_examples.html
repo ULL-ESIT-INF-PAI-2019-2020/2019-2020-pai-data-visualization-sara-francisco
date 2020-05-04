@@ -7,56 +7,43 @@
   <title>Ejemplos de ChartJS utilizados en la presentación</title>
   <meta name="description" content="Ejemplos de ChartJS utilizados en la presentación">
   <meta name="author" content="Francisco Javier Arocas Herrera">
-  <style>
-    html {
-      height: 100%;
-      width: 100%;
-    }
-
-    body {
-      height: 100%;
-      width: 100%;
-      margin: 0px;
-    }
-
-    .parentChart {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="parentChart">
-    <canvas id="Chart1"></canvas>
+  <div class="content">
+    <div id="home"><a href="../index.html">Home</a></div>
+    <h1>Presentation examples</h1>
+    <div class="parentChart">
+      <canvas id="Chart1"></canvas>
+    </div>
+    <hr>
+    <div class="parentChart">
+      <canvas id="Chart2"></canvas>
+    </div>
+    <hr>
+    <div class="parentChart">
+      <canvas id="Chart3"></canvas>
+    </div>
+    <hr>
+    <div class="parentChart">
+      <canvas id="Chart5"></canvas>
+    </div>
+    <hr>
+    <div class="parentChart">
+      <canvas id="Chart6"></canvas>
+    </div>
+    <hr>
+    <div class="parentChart">
+      <canvas id="Chart7"></canvas>
+    </div>
+    <hr>
+    <div class="parentChart">
+      <canvas id="Chart8"></canvas>
+    </div>
+    <hr>
   </div>
-  <hr>
-  <div class="parentChart">
-    <canvas id="Chart2"></canvas>
-  </div>
-  <hr>
-  <div class="parentChart">
-    <canvas id="Chart3"></canvas>
-  </div>
-  <hr>
-  <div class="parentChart">
-    <canvas id="Chart5"></canvas>
-  </div>
-  <hr>
-  <div class="parentChart">
-    <canvas id="Chart6"></canvas>
-  </div>
-  <hr> 
-  <div class="parentChart">
-    <canvas id="Chart7"></canvas>
-  </div>
-  <hr>
-  <div class="parentChart">
-    <canvas id="Chart8"></canvas>
-  </div>
-  <hr>   
-  <script src="../lib/Chartjs/Chart.bundle.min.js"></script>
-  <script src="js/chartPresentationExamples.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="js/presentation_examples.js"></script>
   <script>
     new Chart('Chart1', getExample('line', 'Gráfica de línea'));
     new Chart("Chart2", getExample('bar', 'Gráfica de barra'));
