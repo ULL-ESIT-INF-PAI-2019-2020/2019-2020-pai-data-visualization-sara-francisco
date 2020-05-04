@@ -141,4 +141,10 @@ function add3dimension(bubbleChart) {
 function showScreen() {
     console.log("LINE");
     console.log(getExample('line'));
+    console.log("PIE");
+    console.log(pieChart);
+    console.log("Scatter");
+    console.log(scatterChart);
+    console.log("Bubble");
+    console.log(bubbleChart);
 }
